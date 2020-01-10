@@ -1,7 +1,16 @@
 #include <iostream>
+#include <cmath>
 
-//Write sumSqrt() here.
+using namespace std;
 
+double sumSqrt(int N){
+    double x = 1.0;
+    if(N <= 0) return 0.0;
+    for(int i = 2; i <= N; i++){
+        x = x + (1/sqrt(i));
+    }
+    return x;
+}
 
 int main()
 {
